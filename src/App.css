@@ -1,38 +1,196 @@
 .App {
   text-align: center;
+  
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#nav{
+  background-color:#00D8FF;
+  width:100vw;
+  height: 50px;
+  text-align: center;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav h3{
+  color: white;
+  text-align: center;
+  margin:0px;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+a{
+  text-decoration: none;
+}
+
+.home{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh; 
+margin-top:0;
+}
+
+.container{
+ 
+  width:50vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.cap-container{
+  background-color:#00D8FF;
+  color:white;
+  margin:0;
+  height: auto;
+  width:50vw;
+
+} 
+
+.cap-container h3{
+  margin:0;
+  padding:20px 0;
+
+}
+.cap-container img{
+  width: 50vw;
+  height: 250px;
+  margin:0;
+  object-fit: cover;
+}
+
+
+#beer{
+  width: 50vw;
+  height: 35vh;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  background-color: #b7d2d8;
+  color:white;
+  border-radius: 5px;
+}
+
+#beer a{
+  color: #000;
+  
+}
+ 
+.beer-img-container img{
+  width: 60px;
+  height: 30vh;
+  align-self: center;
+  object-fit: cover;
+  margin-top: 10px;
+  padding: 10px;
+
+}
+
+#beer h3, 
+h4,
+h6{
+  margin:10px
+}
+
+.beer-text-container {
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  width: 35vw;
+  margin: 10px 0px; 
+}
+
+
+/* RANDOM BEER */
+
+.one-beer {
+  display:flex;
+  flex-direction: column ;
+  align-items: center;
+  width: 500px;
+  height: 100vh;
+  margin: 50px
+}
+.one-beer-img{
+  height: 30vh;
+  
+}
+
+
+/*FORMULARIO*/
+
+#form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:400px;
+  height: 75vh;
+  border-radius: 50px;
+  background-color: #00D8FF;
+  padding: 25px 0px;
+  margin:50px 0px;
+  align-self: center;
+  
+
+}
+
+.inForm{
+
+  display: flex ;
+  flex-direction:column;
+  align-items:flex-start;
+  width: 300px;
+  justify-content: space-between;
+  margin:10px 0px;
+}
+
+.inForm label{
+  font-size: 1em;
   color: white;
+  margin-bottom: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.inForm input{
+  background-color: rgb(234, 245, 255);
+  border-radius: 5px;
+  border-style: none;
+  width: 35vw;
+  height: 3vh;
+}
+.inForm textarea{
+  background-color: rgb(234, 245, 255);
+  border-radius: 5px;
+  border-style: none;
+  width: 35vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn-new-beer{
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
 }
+
+#btn-new-beer button{
+
+  margin:20px;
+  padding: 10px;
+  color: white;
+  border-radius: 25px;
+  border-style: none;
+  background-color: #4b6e75;
+
+}
+
